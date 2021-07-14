@@ -1,16 +1,25 @@
 /* font poppin */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* common styles */
+/* common styles or utilities */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
-.container{
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* -------------------------
+    style for first section 
+----------------------------*/
+.container1{
     display: flex;
     background-color: #2D25A0;
-    width: 1474px;
+    width: 1457.5px;
     height: 700px;
     justify-content: space-between;
     align-items: center;
@@ -34,13 +43,115 @@ h1{
     font-size: 20px;
     width: 40px;
     height: 44px;
-    padding: 5px;
+    padding: 10px 20px;
 }
 .anchor:hover{
     background-color: #e0d42c6b;
+}
+.fas{
+    transition: transform 1s;
+}
+.anchor:hover .fas{
+    transform: rotate(360deg);
 }
 .banner img{
     width: 560px;
     height: 450px;
     padding-right: 30px;
+}
+/* -----------------------
+     style for player  
+---------------------------*/
+
+.player-container{
+    padding: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+
+}
+.player{
+    border: 3px solid whitesmoke;
+    /* padding: 60px; */
+}
+.player .player-banner img{
+    padding-left: 60px;
+    padding-top: 10px;
+    width: 300px;
+    height: 256px;
+}
+.player-info{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.player-info p{
+    color: #6C6C6C;
+}
+/*---------------------
+      new news style
+------------------------*/
+#background{
+    background-color: white;
+}
+
+#align{
+    line-height: 65px;
+    padding-top: 0;
+    margin: 0;
+}
+.website-title p{
+    color: saddlebrown;
+}
+
+#ronaldo img{
+    width: 560px;
+    height: 650px;
+}
+/* ----------------
+    footer style
+ ------------------- */
+footer{
+    margin-top: 60px;
+}
+
+footer img{
+    width: 300px;
+    height: 100px;
+}
+footer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.copyright{
+    padding-left: 50px;
+}
+
+
+/*-----------------------
+       Media Queries 
+-------------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container1{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container1{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
