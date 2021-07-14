@@ -1,0 +1,46 @@
+/* font poppin */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    background-color: #2D25A0;
+    width: 1474px;
+    height: 700px;
+    justify-content: space-between;
+    align-items: center;
+}
+.website-title{
+    color: #FFFFFF;
+    font-weight: 700px;
+    font-size: 60px;
+    padding-left: 156px;
+    margin-top: 40px;
+    line-height: 99px;
+}
+h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.website-title a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-size: 20px;
+    width: 40px;
+    height: 44px;
+    padding: 5px;
+}
+.anchor:hover{
+    background-color: #e0d42c6b;
+}
+.banner img{
+    width: 560px;
+    height: 450px;
+    padding-right: 30px;
+}
